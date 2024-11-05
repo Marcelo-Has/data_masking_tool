@@ -12,8 +12,8 @@ A Python application for masking sensitive data in CSV and Excel files using cus
 - [Documentation](#documentation)
 - [Executable](#executable)
 - [Contributing](#contributing)
+- [Author](#author)
 - [License](#license)
-- [Contact](#contact)
 
 ## Description
 
@@ -234,14 +234,15 @@ Contributions are welcome! To contribute:
 - Use the GitHub issue tracker to report bugs or request features.
 - Provide detailed information and steps to reproduce issues.
 
+## Author
+
+Created by **Marcelo Has**
+- **Email**: [marcelo_has@outlook.com](mailto:marcelo_has@outlook.com)
+- **GitHub**: [Marcelo-Has](https://github.com/Marcelo-Has/)
+- **Linkedin**: [marcelo_has@outlook.com](https://www.linkedin.com/in/marcelohas/)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-Created by [Marcelo Has](https://www.linkedin.com/in/marcelohas/)
-- **Email**: marcelo_has@outlook.com
-- **GitHub**: Marcelo-Has
 
 Feel free to reach out with questions, suggestions, or contributions!
