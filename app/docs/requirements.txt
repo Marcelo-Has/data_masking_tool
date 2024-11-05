@@ -3,4 +3,3 @@ numpy
 Faker
 tk
 xlrd
-unittest

@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, scrolledtext
 
+
 class MainWindow:
     def __init__(self, root):
         self.root = root
@@ -9,40 +10,55 @@ class MainWindow:
         # Add global variable for delimiter selection
         self.delimiter_var = tk.StringVar(value=",")
 
-        # UI Setup for delimiter selection
-        delimiter_label = tk.Label(self.root, text="Select CSV Delimiter:")
-        delimiter_label.pack(pady=(10, 0))
-
-        delimiter_dropdown = ttk.Combobox(
-            self.root,
-            textvariable=self.delimiter_var,
-            values=[",", ";", "|", "\t"],
-            state="readonly"
-        )
-        delimiter_dropdown.pack(pady=(0, 10))
-        delimiter_dropdown.set(",")  # Default delimiter
+        # Frame to hold the upload button and delimiter options side by side
+        upload_frame = tk.Frame(self.root)
+        upload_frame.pack(pady=5, anchor="w")
 
         # Instructions label
         instructions = tk.Label(
-            self.root, text="Upload a CSV or Excel file to mask columns with fake data:"
+            upload_frame,
+            text="Upload a CSV or Excel file to mask columns with fake data:",
         )
-        instructions.pack(pady=10)
+        instructions.pack(side="left")
 
         # Upload button
-        self.upload_button = tk.Button(self.root, text="Upload and Mask Data")
-        self.upload_button.pack(pady=5)
+        self.upload_button = tk.Button(upload_frame, text="Upload and Mask Data")
+        self.upload_button.pack(side="left", padx=(0, 10))
+
+        # Frame for delimiter label and dropdown to stack them vertically
+        delimiter_frame = tk.Frame(self.root)
+        delimiter_frame.pack(anchor="w")
+
+        # Delimiter label and dropdown stacked vertically
+        delimiter_label = tk.Label(delimiter_frame, text="Select CSV Delimiter (If Applicable):")
+        delimiter_label.pack(side="left")
+
+        delimiter_dropdown = ttk.Combobox(
+            delimiter_frame,
+            textvariable=self.delimiter_var,
+            values=[",", ";", "|", "\t"],
+            state="readonly",
+        )
+        delimiter_dropdown.pack()
+        delimiter_dropdown.set(",")  # Default delimiter
 
         # Scrollable frame for column settings
         self.column_canvas = tk.Canvas(self.root)
-        self.scrollbar = tk.Scrollbar(self.root, orient="vertical", command=self.column_canvas.yview)
+        self.scrollbar = tk.Scrollbar(
+            self.root, orient="vertical", command=self.column_canvas.yview
+        )
         self.scrollable_frame = tk.Frame(self.column_canvas)
 
         self.scrollable_frame.bind(
             "<Configure>",
-            lambda e: self.column_canvas.configure(scrollregion=self.column_canvas.bbox("all")),
+            lambda e: self.column_canvas.configure(
+                scrollregion=self.column_canvas.bbox("all")
+            ),
         )
 
-        self.column_canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
+        self.column_canvas.create_window(
+            (0, 0), window=self.scrollable_frame, anchor="nw"
+        )
         self.column_canvas.configure(yscrollcommand=self.scrollbar.set)
 
         self.column_canvas.pack(side="left", fill="both", expand=True)
@@ -66,14 +82,19 @@ class MainWindow:
         self.keep_mapping_checkbox.pack(pady=5)
 
         # Log display
-        self.log_text = scrolledtext.ScrolledText(self.root, wrap=tk.WORD, width=60, height=20)
+        self.log_text = scrolledtext.ScrolledText(
+            self.root, wrap=tk.WORD, width=60, height=20
+        )
         self.log_text.pack(pady=10)
 
         # Footer with hyperlink
-        footer = tk.Label(self.root, text="Created by Marcelo Has", fg="blue", cursor="hand2")
+        footer = tk.Label(
+            self.root, text="Created by Marcelo Has", fg="blue", cursor="hand2"
+        )
         footer.pack(pady=10)
         footer.bind("<Button-1>", self.open_link)
 
     def open_link(self, event):
         import webbrowser
+
         webbrowser.open("https://www.linkedin.com/in/marcelohas/")
