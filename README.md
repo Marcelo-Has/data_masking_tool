@@ -39,7 +39,6 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
   - `pandas`
   - `numpy`
   - `faker`
-  - `openpyxl`
   - `xlsxwriter`
   - `xlrd`
   - `tkinter` (comes pre-installed with Python on most systems)
