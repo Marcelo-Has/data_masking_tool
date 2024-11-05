@@ -59,25 +59,25 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
 
 3. **Activate the Virtual Environment**
 
-  - On Windows:
+    - On Windows:
 
-     ```bash
-     venv\Scripts\activate
+      ```bash
+      venv\Scripts\activate
 
-  - On macOS/Linux:
+    - On macOS/Linux:
 
-     ```bash
-     source venv/bin/activate
+      ```bash
+      source venv/bin/activate
 
 4. **Install Dependencies**
 
    ```bash
-   pip install -r data_masking_tool/app/docs/requirements.txt
+   pip install -r app/docs/requirements.txt
 
 5. **Run the Application**
 
    ```bash
-   python data_masking_tool/main.py
+   python main.py
 
 ## Usage
 
@@ -85,7 +85,7 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
 
     Run the main script:
 
-       python data_masking_tool/main.py
+       python main.py
 
 2. **Select CSV Delimiter (If Applicable)**
 
