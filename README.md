@@ -83,9 +83,9 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
 
 1. **Launch the Application**
 
-  Run the main script:
+    Run the main script:
 
-     python data_masking_tool/main.py
+       python data_masking_tool/main.py
 
 2. **Select CSV Delimiter (If Applicable)**
 
