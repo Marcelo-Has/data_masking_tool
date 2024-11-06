@@ -306,7 +306,7 @@ Contributions are welcome! To contribute:
 Created by **Marcelo Has**
 - **Email**: [marcelo_has@outlook.com](mailto:marcelo_has@outlook.com)
 - **GitHub**: [Marcelo-Has](https://github.com/Marcelo-Has/)
-- **Linkedin**: [marcelo_has@outlook.com](https://www.linkedin.com/in/marcelohas/)
+- **Linkedin**: [https://www.linkedin.com/in/marcelohas/](https://www.linkedin.com/in/marcelohas/)
 
 ## License
 
