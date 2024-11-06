@@ -89,11 +89,11 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
 
 2. **Select CSV Delimiter (If Applicable)**
 
-  If you're working with CSV files, choose the appropriate delimiter from the dropdown menu.
+    If you're working with CSV files, choose the appropriate delimiter from the dropdown menu.
 
 3. **Upload a File**
 
-  Click on the **"Upload and Mask Data"** button and select the CSV or Excel file you wish to mask.
+    Click on the **"Upload and Mask Data"** button and select the CSV or Excel file you wish to mask.
 
 4. **Select Columns to Mask**
 
@@ -105,19 +105,19 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
 
 5. **Configure Fake Data (Optional)**
 
-  Customize settings such as prefixes, suffixes, ranges, and custom lists in the configuration pane.
+    Customize settings such as prefixes, suffixes, ranges, and custom lists in the configuration pane.
 
 6. **Generate Fake Data**
 
-  Click the **"Generate Fake Data"** button to start the masking process.
+    Click the **"Generate Fake Data"** button to start the masking process.
 
 7. **Save the Masked Data**
 
-  After processing, you'll be prompted to choose a location to save the masked file. The default filename will be the original name appended with `_masked.xlsx`.
+    After processing, you'll be prompted to choose a location to save the masked file. The default filename will be the original name appended with `_masked.xlsx`.
 
 8. **View Logs**
 
-  Monitor the progress and view detailed logs in the log display area within the application.
+    Monitor the progress and view detailed logs in the log display area within the application.
 
 ## Examples
 
@@ -210,11 +210,11 @@ The Jupyter Notebook example covers:
 
 3. **Open the Notebook**
 
-  You can open the notebook using Jupyter Notebook or JupyterLab:
+    You can open the notebook using Jupyter Notebook or JupyterLab:
 
-   ```bash
-   jupyter notebook DataMaskingToolExample.ipynb
-   ```
+    ```bash
+    jupyter notebook DataMaskingToolExample.ipynb
+    ```
 
 or
 
@@ -224,11 +224,11 @@ or
 
 4. **Install Dependencies (If Needed)**
 
-  Make sure you have all the required Python libraries installed:
+    Make sure you have all the required Python libraries installed:
 
-   ```bash
-   pip install pandas numpy faker openpyxl xlsxwriter
-   ```
+    ```bash
+    pip install pandas numpy faker openpyxl xlsxwriter
+    ```
 
 5. **Run the Notebook**
 
@@ -263,7 +263,7 @@ Contributions are welcome! To contribute:
 
 1. **Fork the Repository**
 
-  Click the **Fork** button on the top right to create a copy of this repository on your GitHub account.
+    Click the **Fork** button on the top right to create a copy of this repository on your GitHub account.
 
 2. **Clone Your Fork**
 
@@ -287,7 +287,7 @@ Contributions are welcome! To contribute:
 
 6. **Open a Pull Request**
 
-  Submit a pull request to the main repository for review.
+    Submit a pull request to the main repository for review.
 
 ### Coding Guidelines
 
