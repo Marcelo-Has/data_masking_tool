@@ -210,7 +210,7 @@ The Jupyter Notebook example covers:
 
 3. **Open the Notebook**
 
-You can open the notebook using Jupyter Notebook or JupyterLab:
+  You can open the notebook using Jupyter Notebook or JupyterLab:
 
    ```bash
    jupyter notebook DataMaskingToolExample.ipynb
@@ -224,7 +224,7 @@ or
 
 4. **Install Dependencies (If Needed)**
 
-Make sure you have all the required Python libraries installed:
+  Make sure you have all the required Python libraries installed:
 
    ```bash
    pip install pandas numpy faker openpyxl xlsxwriter
