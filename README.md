@@ -206,7 +206,7 @@ The Jupyter Notebook example covers:
 2. **Navigate to the Docs Directory**
 
    ```bash
-   cd docs
+   cd app/docs
 
 3. **Open the Notebook**
 
