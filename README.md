@@ -203,11 +203,10 @@ The Jupyter Notebook example covers:
    git clone https://github.com/Marcelo-Has/data-masking-tool.git
    cd data-masking-tool
 
-2. **Navigate to the Examples Directory**
+2. **Navigate to the Docs Directory**
 
    ```bash
-   cd examples
-
+   cd docs
 
 3. **Open the Notebook**
 
