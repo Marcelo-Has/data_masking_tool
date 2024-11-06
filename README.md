@@ -10,6 +10,7 @@ A Python application for masking sensitive data in CSV and Excel files using cus
 - [Usage](#usage)
 - [Examples](#examples)
 - [Documentation](#documentation)
+- [Jupyter Notebook Example](#jupyter-notebook-example)
 - [Executable](#executable)
 - [Contributing](#contributing)
 - [Author](#author)
@@ -174,6 +175,75 @@ The Data Masking Tool is designed to help users anonymize sensitive data within 
 - **Number Ranges**: Set minimum and maximum values for numeric fields.
 - **Date Ranges**: Define start and end dates for date fields.
 - **UUID Types**: Choose between standard UUIDs or custom alphanumeric codes.
+
+## Jupyter Notebook Example
+
+If you prefer to use the Data Masking Tool within a Jupyter Notebook or want to integrate it into your data processing workflows without the GUI, we've provided a comprehensive notebook example that demonstrates how to use the tool programmatically.
+
+### Accessing the Notebook
+
+- **Notebook File**: [docs/DataMaskingToolExample.ipynb](app/docs/DataMaskingToolExample.ipynb)
+
+### Overview
+
+The Jupyter Notebook example covers:
+
+- **Importing Necessary Modules**: Instructions on setting up your environment with the required libraries.
+- **Defining Utility Functions**: Essential functions needed for data masking operations.
+- **Configuring Masking Parameters**: How to specify which columns to mask and configure their settings.
+- **Running the Masking Function**: Applying the masking to your dataset.
+- **Reviewing Results**: Viewing the masked data and logs.
+- **Saving Masked Data**: Instructions on saving the masked DataFrame to a file.
+
+### Usage Steps
+
+1. **Clone the Repository (If Not Already Done)**
+
+   ```bash
+   git clone https://github.com/Marcelo-Has/data-masking-tool.git
+   cd data-masking-tool
+
+2. **Navigate to the Examples Directory**
+
+   ```bash
+   cd examples
+
+
+3. **Open the Notebook**
+
+You can open the notebook using Jupyter Notebook or JupyterLab:
+
+   ```bash
+   jupyter notebook DataMaskingToolExample.ipynb
+   ```
+
+or
+
+   ```bash
+   jupyter lab DataMaskingToolExample.ipynb
+   ```
+
+4. **Install Dependencies (If Needed)**
+
+Make sure you have all the required Python libraries installed:
+
+   ```bash
+   pip install pandas numpy faker openpyxl xlsxwriter
+   ```
+
+5. **Run the Notebook**
+
+- Execute each cell sequentially to understand how the Data Masking Tool works in a notebook environment.
+- The notebook includes detailed explanations and test cases for various masking configurations.
+
+### Customization
+- **Adjust Configurations**: Modify the configurations in the notebook to suit your dataset and masking requirements.
+- **Integrate into Your Workflow**: Use the code snippets as a starting point to integrate data masking into your data processing pipelines.
+
+### Benefits of Using the Notebook
+- **Programmatic Control**: Run data masking operations without the GUI, allowing for automation and integration with other code.
+- **Flexibility**: Customize the masking process extensively through code.
+- **Documentation**: The notebook serves as both a tutorial and a reference guide.
 
 ## Executable
 
