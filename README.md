@@ -216,11 +216,11 @@ The Jupyter Notebook example covers:
     jupyter notebook DataMaskingToolExample.ipynb
     ```
 
-or
+    or
 
-   ```bash
-   jupyter lab DataMaskingToolExample.ipynb
-   ```
+    ```bash
+    jupyter lab DataMaskingToolExample.ipynb
+    ```
 
 4. **Install Dependencies (If Needed)**
 
